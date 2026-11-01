@@ -9,43 +9,83 @@ object Form1: TForm1
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
   object btExit: TButton
-    StyledSettings = [Style]
-    Position.X = 8.000000000000000000
-    Position.Y = 248.000000000000000000
-    Size.Width = 129.000000000000000000
-    Size.Height = 46.000000000000000000
+    StyledSettings = []
+    Position.X = 8.00000000000000000
+    Position.Y = 248.00000000000000000
+    Size.Width = 129.00000000000000000
+    Size.Height = 46.00000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
-    Text = #1047#1072#1082#1088#1099#1090#1100
-    TextSettings.Font.Family = 'Garamond'
-    TextSettings.Font.Size = 20.000000000000000000
+    Text = #1047#1072#1082#1088#1099#1090#1100' '
+    TextSettings.Font.Family = 'Sitka Text'
+    TextSettings.Font.Size = 16.00000000000000000
+    TextSettings.Font.StyleExt = {00070000000200000004000000}
     TextSettings.FontColor = claDarkorchid
     OnClick = btExitClick
   end
   object btLoad: TButton
-    Position.X = 160.000000000000000000
-    Position.Y = 248.000000000000000000
+    StyledSettings = []
+    Position.X = 145.00000000000000000
+    Position.Y = 248.00000000000000000
+    Size.Width = 112.00000000000000000
+    Size.Height = 46.00000000000000000
+    Size.PlatformDefault = False
     TabOrder = 2
     Text = #1047#1072#1075#1088#1091#1079#1080#1090#1100
+    TextSettings.Font.Family = 'Sitka Text'
+    TextSettings.Font.Size = 16.00000000000000000
+    TextSettings.Font.StyleExt = {00070000000200000004000000}
+    TextSettings.FontColor = claBlue
     OnClick = btLoadClick
   end
   object btPlay: TButton
-    Position.X = 248.000000000000000000
-    Position.Y = 248.000000000000000000
+    StyledSettings = []
+    Position.X = 265.00000000000000000
+    Position.Y = 248.00000000000000000
+    Size.Width = 104.00000000000000000
+    Size.Height = 46.00000000000000000
+    Size.PlatformDefault = False
     TabOrder = 3
     Text = #1048#1075#1088#1072#1090#1100
+    TextSettings.Font.Family = 'Sitka Text'
+    TextSettings.Font.Size = 16.00000000000000000
+    TextSettings.Font.StyleExt = {00070000000100000004000000}
+    TextSettings.FontColor = claCrimson
     OnClick = btPlayClick
   end
-  object btStop: TButton
-    Position.X = 336.000000000000000000
-    Position.Y = 248.000000000000000000
-    TabOrder = 4
-    Text = #1054#1089#1090#1072#1085#1086#1074#1080#1090#1100
-    OnClick = btStopClick
+  object btPause: TButton
+    StyledSettings = []
+    Position.X = 377.00000000000000000
+    Position.Y = 248.00000000000000000
+    Size.Width = 104.00000000000000000
+    Size.Height = 46.00000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = #1055#1072#1091#1079#1072
+    TextSettings.Font.Family = 'Sitka Text'
+    TextSettings.Font.Size = 16.00000000000000000
+    TextSettings.Font.StyleExt = {00070000000100000004000000}
+    TextSettings.FontColor = claCoral
+    OnClick = btPauseClick
   end
   object mpMusic: TMediaPlayer
     FileName = 'C:\Users\ropsh\Downloads\2. '#1050#1056#1040#1057#1048#1042#1040#1071' '#1071#1055#1054#1053#1057#1050#1040#1071' '#1055#1045#1057#1053#1071'.mp3'
     Left = 360
     Top = 152
+  end
+  object btStop: TButton
+    StyledSettings = []
+    Position.X = 489.00000000000000000
+    Position.Y = 248.00000000000000000
+    Size.Width = 104.00000000000000000
+    Size.Height = 46.00000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = #1057#1090#1086#1087
+    TextSettings.Font.Family = 'Sitka Text'
+    TextSettings.Font.Size = 16.00000000000000000
+    TextSettings.Font.StyleExt = {00070000000100000004000000}
+    TextSettings.FontColor = claDarkblue
+    OnClick = btStopClick
   end
 end

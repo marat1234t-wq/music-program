@@ -13,10 +13,12 @@ type
     btExit: TButton;
     btLoad: TButton;
     btPlay: TButton;
+    btPause: TButton;
     btStop: TButton;
     procedure btExitClick(Sender: TObject);
     procedure btLoadClick(Sender: TObject);
     procedure btPlayClick(Sender: TObject);
+    procedure btPauseClick(Sender: TObject);
     procedure btStopClick(Sender: TObject);
    private
       { Private declarations }
@@ -47,7 +49,7 @@ begin
          mpMusic.Stop;
          if mpMusic.State = TMediaState.Stopped
          then begin
-            mpMusic.CurrentTime := 0;
+
             mpMusic.Volume := 1;
             mpMusic.Play;
          end;
@@ -55,6 +57,13 @@ begin
 end;
 
 procedure TForm1.btStopClick(Sender: TObject);
+begin
+ if mpMusic <> nil
+   then mpMusic.Stop; mpMusic.CurrentTime := 0;
+
+end;
+
+procedure TForm1.btPauseClick(Sender: TObject);
 begin
    if mpMusic <> nil
    then mpMusic.Stop;
