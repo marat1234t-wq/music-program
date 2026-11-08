@@ -2,18 +2,18 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 584
-  ClientWidth = 804
+  ClientHeight = 288
+  ClientWidth = 221
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
   object btExit: TButton
     StyledSettings = []
-    Position.X = 8.00000000000000000
-    Position.Y = 248.00000000000000000
-    Size.Width = 129.00000000000000000
-    Size.Height = 46.00000000000000000
+    Position.X = 112.00000000000000000
+    Position.Y = 188.00000000000000000
+    Size.Width = 104.00000000000000000
+    Size.Height = 47.00000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
     Text = #1047#1072#1082#1088#1099#1090#1100' '
@@ -25,10 +25,9 @@ object Form1: TForm1
   end
   object btLoad: TButton
     StyledSettings = []
-    Position.X = 145.00000000000000000
-    Position.Y = 248.00000000000000000
-    Size.Width = 112.00000000000000000
-    Size.Height = 46.00000000000000000
+    Position.Y = 242.00000000000000000
+    Size.Width = 104.00000000000000000
+    Size.Height = 48.00000000000000000
     Size.PlatformDefault = False
     TabOrder = 2
     Text = #1047#1072#1075#1088#1091#1079#1080#1090#1100
@@ -40,8 +39,7 @@ object Form1: TForm1
   end
   object btPlay: TButton
     StyledSettings = []
-    Position.X = 265.00000000000000000
-    Position.Y = 248.00000000000000000
+    Position.Y = 188.00000000000000000
     Size.Width = 104.00000000000000000
     Size.Height = 46.00000000000000000
     Size.PlatformDefault = False
@@ -55,8 +53,8 @@ object Form1: TForm1
   end
   object btPause: TButton
     StyledSettings = []
-    Position.X = 377.00000000000000000
-    Position.Y = 248.00000000000000000
+    Position.X = 112.00000000000000000
+    Position.Y = 134.00000000000000000
     Size.Width = 104.00000000000000000
     Size.Height = 46.00000000000000000
     Size.PlatformDefault = False
@@ -70,13 +68,12 @@ object Form1: TForm1
   end
   object mpMusic: TMediaPlayer
     FileName = 'C:\Users\ropsh\Downloads\2. '#1050#1056#1040#1057#1048#1042#1040#1071' '#1071#1055#1054#1053#1057#1050#1040#1071' '#1055#1045#1057#1053#1071'.mp3'
-    Left = 360
-    Top = 152
+    Left = 416
+    Top = 168
   end
   object btStop: TButton
     StyledSettings = []
-    Position.X = 489.00000000000000000
-    Position.Y = 248.00000000000000000
+    Position.Y = 134.00000000000000000
     Size.Width = 104.00000000000000000
     Size.Height = 46.00000000000000000
     Size.PlatformDefault = False
@@ -87,5 +84,13 @@ object Form1: TForm1
     TextSettings.Font.StyleExt = {00070000000100000004000000}
     TextSettings.FontColor = claDarkblue
     OnClick = btStopClick
+  end
+  object Image1: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Size.Width = 216.00000000000000000
+    Size.Height = 126.00000000000000000
+    Size.PlatformDefault = False
   end
 end

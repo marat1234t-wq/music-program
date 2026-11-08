@@ -5,7 +5,7 @@ interface
 uses
    System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
    FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Media,
-  FMX.Controls.Presentation, FMX.StdCtrls;
+  FMX.Controls.Presentation, FMX.StdCtrls, FMX.Objects;
 
 type
    TForm1 = class(TForm)
@@ -15,6 +15,7 @@ type
     btPlay: TButton;
     btPause: TButton;
     btStop: TButton;
+    Image1: TImage;
     procedure btExitClick(Sender: TObject);
     procedure btLoadClick(Sender: TObject);
     procedure btPlayClick(Sender: TObject);
