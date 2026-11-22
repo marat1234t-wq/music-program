@@ -2,7 +2,7 @@ unit Unit1;
 
 interface
 
-uses
+uses System.IOutils,
    System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
    FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Media,
   FMX.Controls.Presentation, FMX.StdCtrls, FMX.Objects;
@@ -21,13 +21,15 @@ type
     procedure btPlayClick(Sender: TObject);
     procedure btPauseClick(Sender: TObject);
     procedure btStopClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
    private
       { Private declarations }
    public
       { Public declarations }
    end;
 
-var
+var music: Tarray <String>;
+ List:Tstringlist;
    Form1: TForm1;
 
 implementation
@@ -37,9 +39,13 @@ implementation
 procedure TForm1.btExitClick(Sender: TObject); begin Application.Terminate; end;
 
 procedure TForm1.btLoadClick(Sender: TObject);
+var i:integer;
 begin
-   mpMusic.Clear;
-   mpMusic.FileName := 'C:\Users\ropsh\Downloads\2.  –¿—»¬¿ﬂ ﬂœŒÕ— ¿ﬂ œ≈—Õﬂ.mp3';
+music:=TDirectory.GetFiles ('C:\Users\ropsh\Downloads'{*,'*.mp3'});
+list.clear;
+for I := 0 to length(music)-1 do
+list.add(music[i]);
+list.SaveToFile('list1.txt')
 end;
 
 procedure TForm1.btPlayClick(Sender: TObject);
@@ -62,6 +68,11 @@ begin
  if mpMusic <> nil
    then mpMusic.Stop; mpMusic.CurrentTime := 0;
 
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+list:=tstringlist.create;
 end;
 
 procedure TForm1.btPauseClick(Sender: TObject);
